@@ -1,6 +1,6 @@
 {
   "name": "eslint",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "type": "module",
   "license": "MIT",
   "main": "./dist/eslint.umd.cjs",
@@ -38,6 +38,6 @@
     "vite": "^5.4.6"
   },
   "peerDependencies": {
-  "eslint": ">=9.0.0"
-}
+    "eslint": ">=9.0.0"
+  }
 }
