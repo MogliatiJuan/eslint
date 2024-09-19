@@ -1,13 +1,13 @@
 {
-  "name": "eslint",
+  "name": "eslint-config-global",
   "version": "0.0.1",
   "type": "module",
   "license": "MIT",
-  "main": "./dist/eslint.umd.cjs",
+  "main": "./dist/eslint-config-global.umd.cjs",
   "exports": {
     ".": {
-      "import": "./dist/eslint.js",
-      "require": "./dist/eslint.cjs"
+      "import": "./dist/eslint-config-global.js",
+      "require": "./dist/eslint-config-global.cjs"
     }
   },
   "publishConfig": {

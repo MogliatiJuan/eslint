@@ -1,12 +1,16 @@
 import js from '@eslint/js'
+import simpleImportSort from 'eslint-plugin-simple-import-sort'
+import unusedImports from 'eslint-plugin-unused-imports'
 
 export default [
   js.configs.recommended,
   {
-    extends: ['love', 'important-stuff'],
-    plugins: ['simple-import-sort', 'unused-imports'],
-    env: { node: true },
-    globals: { NodeJS: true },
+    plugins: {
+      'simple-import-sort': simpleImportSort,
+      'unused-imports': unusedImports
+    }
+  },
+  {
     rules: {
       'simple-import-sort/exports': 'error',
       'no-await-in-loop': 'error',
@@ -29,9 +33,11 @@ export default [
       'max-depth': ['warn', 5],
       'max-lines': ['error', 600],
       'no-empty-function': 'error',
-      'no-magic-numbers': 'error',
+      'no-console': ['error', { allow: ['warn', 'error'] }],
+      'prefer-const': 'error',
+      'no-magic-numbers': 'warn',
+      'no-unused-vars': 'warn',
       eqeqeq: 'warn',
-      'no-unused-vars': 'off',
       'no-inline-comments': 'warn',
       'no-nested-ternary': 'warn'
     }
