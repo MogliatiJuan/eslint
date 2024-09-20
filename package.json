@@ -16,6 +16,13 @@
   "files": [
     "dist"
   ],
+  "keywords": [ 
+    "eslint", 
+    "prettier", 
+    "format",
+    "javascript",
+    "typescript",
+    "config" ],
   "scripts": {
     "dev": "vite",
     "build": "vite build",
