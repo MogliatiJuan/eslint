@@ -30,15 +30,15 @@ export default [
       'default-case-last': 'error',
       'default-param-last': 'error',
       'max-depth': ['warn', 5],
-      'max-lines': ['error', 600],
       'no-empty-function': 'error',
-      'no-console': ['error', { allow: ['warn', 'error'] }],
+      'no-console': ['error', { allow: ['warn', 'error', 'info', 'time', 'timeEnd', 'timeLog', 'trace'] }],
       'prefer-const': 'error',
       'no-magic-numbers': 'warn',
       'no-unused-vars': 'warn',
       eqeqeq: 'warn',
       'no-inline-comments': 'warn',
       'no-nested-ternary': 'warn',
+      'max-lines': ['warn', 800],
       'prettier/prettier': [
         'error',
         {
