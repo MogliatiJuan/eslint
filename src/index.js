@@ -38,7 +38,6 @@ export default [
       eqeqeq: 'warn',
       'no-inline-comments': 'warn',
       'no-nested-ternary': 'warn',
-      'max-lines': ['warn', 800],
       'prettier/prettier': [
         'error',
         {
@@ -52,7 +51,7 @@ export default [
           "bracketSameLine": true,
           "jsxSingleQuote": true,
           "useTabs": false,
-          "endOfLine": "lf",
+          "endOfLine": "auto",
           overrides: [
             {
               files: '*.json',
